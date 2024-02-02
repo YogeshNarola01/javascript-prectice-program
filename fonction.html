@@ -1,0 +1,32 @@
+<html>
+    <script type="text/javascript">
+
+        function sum(){
+            var a = parseInt(prompt("Enter the number A :- "));
+            var b = parseInt(prompt("Enter the number B :- "));
+            var choice = prompt("Enter your choice : +  -  /  *  % ");
+
+            switch(choice){
+                case '+' :
+                document.write(`${a}+${b} = ${a+b}`);
+                break;
+                case '-' :
+                document.write(`${a}-${b} = ${a-b}`);
+                break;
+                case '*' :
+                document.write(`${a}*${b} = ${a*b}`);
+                break;
+                case '/' :
+                document.write(`${a}/${b} = ${a/b}`);
+                break;
+                case '%' :
+                document.write(`${a}%${b} = ${a%b}`);
+                break;
+                default :
+                document.write(`<h2>something want wrong...</h2>`);
+            }
+        }
+
+        sum();
+    </script>
+</html>

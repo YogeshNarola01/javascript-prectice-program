@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        var a = parseInt(prompt("Enter any nomber and chack this number in primery and non primery..."))
+        fream = 0;
+        for(let i=2; i<a; i++){
+            if(a % i == 0){
+                fream = 1;
+            }
+        }
+        if(fream == 1){
+            document.write("your number is non primery");
+        }else{
+            document.write("your number is primery");
+        }
+            
+        
+    </script>
+</body>
+</html>

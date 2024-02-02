@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script type="text/javascript">
+        var a = parseInt(prompt("Enter A : "));
+        var b = parseInt(prompt("Enter B : "));
+        var c = parseInt(prompt("Enter C : "));
+        var d = parseInt(prompt("Enter D : "));
+        var e = parseInt(prompt("Enter E : "));
+        var f = parseInt(prompt("Enter F : "));
+        var msg = 0;
+        if(a > b){
+            if(a > c){
+                if(a > d){
+                   if(a > e){
+                       if(a > f){
+                        msg = "A is max";
+                       }else{
+                        msg = "F is max";
+                       }
+                   }else{
+                    msg = "E is max";
+                   }
+                 }else{
+                 msg = "D is max";
+                }
+             }else{
+                msg = "C is max";
+            }
+        }else{
+           if(b > c){
+                if(b > d){
+                    if(b > e){
+                        if(b > f){
+                            msg = "B is max";
+                        }else{
+                            msg = "F is max";
+                        }
+                    }else{
+                        msg = "E is max";
+                    }
+                 }else{
+                    msg = "D is max";
+                }
+             }else{
+                msg = "C is max";
+            }
+        }
+
+        document.write(`<h1>${msg}</h1>`);
+    </script>
+</body>
+</html>
