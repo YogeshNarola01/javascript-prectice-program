@@ -1,0 +1,66 @@
+<html>
+<script type="text/javascript">
+    // push : this method use for add element in ending side.
+    let arr = [10, 20, 30, 40, 50];
+    arr.push(20);
+    console.warn(arr);
+
+    //pop : this method use for remove element in ending side.
+    let arr1 = [10, 20, 25, 30, 35, 40];
+    arr1.pop();
+    console.warn(arr1);
+
+    //shift : this method use for add element in starting side.
+    let arr2 = [5, 10, 15, 20, 25, 30, 35];
+    arr2.shift();
+    console.warn(arr2);
+
+    //unshift : this method use for remove element in starting side.
+    let arr3 = [5, 10, 15, 20, 25, 30, 35];
+    arr3.unshift(2);
+    console.warn(arr3);
+
+    //splice : this method are use for remove number and add
+    let arr4 = [5, 10, 15, 20, 25, 30, 35];
+    arr4.splice(3, 1, 55, 26);
+    console.warn(arr4);
+
+    //map : this mathod use for same work as for loop.
+    const arr5 = [10, 20, 30, 40, 50];
+    const newele = arr5.map((a) => {
+        return a * 2;
+    });
+    console.warn(newele);
+
+    //filter : this mathod use for all element filter and chack condition and return true part's.
+    const arr6 = [10, 20, 30, 40, 50];
+    const newele1 = arr6.filter((a) => {
+        return a > 20;
+    });
+    console.warn(newele1);
+
+    //forEach : this mathod use for call a function element in arry.
+    const arr7 = [10, 20, 30, 40, 50];
+    const newele2 = arr7.forEach((a, i) => {
+        console.warn(a);
+    });
+
+    //indexOf : this mathod use for fiend the array element index value.
+    const arr8 = [10, 20, 30, 40, 50, 60, 70];
+    const newele3 = arr8.indexOf(80);
+    console.warn(newele3);
+
+    //include : this method use for chack array element.
+    const arr9 = [10, 20, 30, 40, 50];
+    const newele4 = arr9.includes(20);
+    console.warn(newele4);
+
+    //every : this mathod use for chack condition and all condition is true so ans true and 1 condition false to condition false;
+    const arr10 = [10, 20, 30, 40, 50, 60];
+    const newele5 = arr10.every((a) => {
+        return a > 10;
+    });
+    console.warn(newele5);
+</script>
+
+</html>

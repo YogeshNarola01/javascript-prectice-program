@@ -1,0 +1,79 @@
+<html>
+<table border="2">
+    <tr>
+        <th>index</th>
+        <th>Name</th>
+        <th>S.Name</th>
+        <th>Course</th>
+        <th>Joining Date</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Phone No</th>
+        <th>City</th>
+        <th>State</th>
+    </tr>
+    <tbody id="allrecord"></tbody>
+</table>
+
+<script type="text/javascript">
+    const record = [
+        {
+            fname: "Yogesh",
+            lname: "Narola",
+            course: "Fullstack Development",
+            date: "june,4,2023",
+            email: "yogesh@gmail.com",
+            password: "Yogi@123",
+            phone: 8799356583,
+            city: "Surat",
+            state: "Gujrat",
+        },
+        {
+            fname: "Nayan",
+            lname: "Bhisara",
+            course: "Fullstack Development",
+            date: "july,8,2023",
+            email: "nayan@gmail.com",
+            password: "Nayan@123",
+            phone: 6598326549,
+            city: "Bhavnagar",
+            state: "Gujrat",
+        },
+        {
+            fname: "Sujal",
+            lname: "Tank",
+            course: "Fullstack Development",
+            date: "july,16,2023",
+            email: "sujal@gmail.com",
+            password: "Sujal@123",
+            phone: 8799356583,
+            city: "Navsari",
+            state: "Gujrat",
+        }
+    ]
+    let call="";
+    let cut = 0;
+    record.map((val, i) => {
+        cut++;
+        return (
+            call +=
+            `
+            <tr>
+            <td>${cut}</td>
+            <td>${val.fname}</td>
+            <td>${val.lname}</td>
+            <td>${val.course}</td>
+            <td>${val.date}</td>
+            <td>${val.email}</td>
+            <td>${val.password}</td>
+            <td>${val.phone}</td>
+            <td>${val.city}</td>
+            <td>${val.state}</td>
+            </tr>
+            `
+        )
+    });
+    document.getElementById(`allrecord`).innerHTML = call;
+</script>
+
+</html>

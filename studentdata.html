@@ -1,0 +1,222 @@
+<html>
+<table border="6"
+    style="font-size: medium; background-image: url(/free-photo-of-a-fence-covered-in-snow-with-a-pattern.jpeg); opacity: 90%; background-blend-mode:color-burn;">
+    <tr>
+        <th>Index</th>
+        <th>S.Name</th>
+        <th>Name</th>
+        <th>City</th>
+        <th>Branch</th>
+        <th>Course</th>
+        <th>Date</th>
+        <th>Joining Date</th>
+        <th>End Date</th>
+        <th>Status</th>
+    </tr>
+    <tbody id="stddata"></tbody>
+</table>
+<script type="text/javascript">
+    const record = [
+        {
+            sname: "Narola",
+            name: "Yogesh",
+            city: "Surat",
+            branch: "Rw4",
+            grid: 4125,
+            course: "Fullstack Development",
+            date: "04-05-2023",
+            enddate: "27-10-2024",
+            status: "True",
+        },
+        {
+            sname: "Narola",
+            name: "Yogesh",
+            city: "Surat",
+            branch: "Rw4",
+            grid: 4125,
+            course: "Fullstack Development",
+            date: "04-05-2023",
+            enddate: "27-10-2024",
+            status: "True",
+        },
+        {
+            sname: "Narola",
+            name: "Yogesh",
+            city: "Surat",
+            branch: "Rw4",
+            grid: 4125,
+            course: "Fullstack Development",
+            date: "04-05-2023",
+            enddate: "27-10-2024",
+            status: "True",
+        },
+        {
+            sname: "Narola",
+            name: "Yogesh",
+            city: "Surat",
+            branch: "Rw4",
+            grid: 4125,
+            course: "Fullstack Development",
+            date: "04-05-2023",
+            enddate: "27-10-2024",
+            status: "True",
+        },
+        {
+            sname: "Narola",
+            name: "Yogesh",
+            city: "Surat",
+            branch: "Rw4",
+            grid: 4125,
+            course: "Fullstack Development",
+            date: "04-05-2023",
+            enddate: "27-10-2024",
+            status: "True",
+        },
+        {
+            sname: "Narola",
+            name: "Yogesh",
+            city: "Surat",
+            branch: "Rw4",
+            grid: 4125,
+            course: "Fullstack Development",
+            date: "04-05-2023",
+            enddate: "27-10-2024",
+            status: "True",
+        },
+        {
+            sname: "Narola",
+            name: "Yogesh",
+            city: "Surat",
+            branch: "Rw4",
+            grid: 4125,
+            course: "Fullstack Development",
+            date: "04-05-2023",
+            enddate: "27-10-2024",
+            status: "True",
+        },
+        {
+            sname: "Narola",
+            name: "Yogesh",
+            city: "Surat",
+            branch: "Rw4",
+            grid: 4125,
+            course: "Fullstack Development",
+            date: "04-05-2023",
+            enddate: "27-10-2024",
+            status: "True",
+        },
+    ];
+    var call = "";
+    var count = 0;
+    record.map((val, i) => {
+        count++;
+        return call +=
+            `
+            <tr>
+                <td>${count}</td>                
+                <td>${val.sname}</td>
+                <td>${val.name}</td>
+                <td>${val.city}</td>
+                <td>${val.branch}</td>
+                <td>${val.grid}</td>
+                <td>${val.course}</td>
+                <td>${val.date}</td>
+                <td>${val.enddate}</td>
+                <td>${val.status}</td>
+            </tr>
+        `
+    });
+    document.getElementById(`stddata`).innerHTML = call;
+</script>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+<html>
+<table border="6">
+    <br>
+    <tr>
+        <th>index</th>
+        <th>Name</th>
+        <th>S.Name</th>
+        <th>Course</th>
+        <th>Joining Date</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Phone No</th>
+        <th>City</th>
+        <th>State</th>
+    </tr>
+    <tbody id="allrecord"></tbody>
+</table>
+
+<script type="text/javascript">
+    const record1 = [
+        {
+            fname: "Yogesh",
+            lname: "Narola",
+            course: "Fullstack Development",
+            date: "june,4,2023",
+            email: "yogesh@gmail.com",
+            password: "Yogi@123",
+            phone: 8799356583,
+            city: "Surat",
+            state: "Gujrat",
+        },
+        {
+            fname: "Nayan",
+            lname: "Bhisara",
+            course: "Fullstack Development",
+            date: "july,8,2023",
+            email: "nayan@gmail.com",
+            password: "Nayan@123",
+            phone: 6598326549,
+            city: "Bhavnagar",
+            state: "Gujrat",
+        },
+        {
+            fname: "Sujal",
+            lname: "Tank",
+            course: "Fullstack Development",
+            date: "july,16,2023",
+            email: "sujal@gmail.com",
+            password: "Sujal@123",
+            phone: 8799356583,
+            city: "Navsari",
+            state: "Gujrat",
+        }
+    ]
+    let call1 = "";
+    let cut = 0;
+    record1.map((val, i) => {
+        cut++;
+        return (
+            call1 +=
+            `
+            <tr>
+            <td>${cut}</td>
+            <td>${val.fname}</td>
+            <td>${val.lname}</td>
+            <td>${val.course}</td>
+            <td>${val.date}</td>
+            <td>${val.email}</td>
+            <td>${val.password}</td>
+            <td>${val.phone}</td>
+            <td>${val.city}</td>
+            <td>${val.state}</td>
+            </tr>
+            `
+        )
+    });
+    document.getElementById(`allrecord`).innerHTML = call1;
+</script>
+
+</html>
