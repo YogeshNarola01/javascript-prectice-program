@@ -1,0 +1,143 @@
+<html>
+<h2 style="display:flex;">reverce methode :-<p id="reverce"></p>
+</h2>
+<h2 style="display:flex;">pop methode :-<p id="pop"></p>
+</h2>
+<h2 style="display:flex;">push methode :-<p id="push"></p>
+</h2>
+<h2 style="display:flex;">concat methode :-<p id="concat"></p>
+</h2>
+<h2 style="display:flex;">from methode :-<p id="from"></p>
+</h2>
+<h2 style="display:flex;">indexof methode :-<p id="indexof"></p>
+</h2>
+<h2 style="display:flex;">isArray methode :-<p id="isarray"></p>
+</h2>
+<h2 style="display:flex;">join methode :-<p id="join"></p>
+</h2>
+<h2 style="display:flex;">sort methode :-<p id="sort"></p>
+</h2>
+<h2 style="display:flex;">array to string methode :-<p id="sring"></p>
+</h2>
+<h2 style="display:flex;">shift methode :-<p id="shift"></p>
+</h2>
+<h2 style="display:flex;">unshift methode :-<p id="unshift"></p>
+</h2>
+<h2 style="display:flex;">length methode :-<p id="length"></p>
+</h2>
+<h2 style="display:flex;">splice methode :-<p id="splice"></p>
+</h2>
+<h2 style="display:flex;">slice methode :-<p id="slice"></p>
+</h2>
+<h2 style="display:flex;">forEach function :-<p id="foreach"></p>
+</h2>
+<h2 style="display:flex;">map function :-<p id="map"></p>
+</h2>
+<h2 style="display:flex;">filter function :-<p id="filter"></p>
+</h2>
+
+
+<script type="text/javascript">
+    // Array reverse() method
+    var arr = [10, 20, 30, 40, 50, 60];
+    arr.reverse();
+    document.getElementById("reverce").innerHTML = arr;
+
+    //Array pop() method (remove of last array)
+    var arrpop = [10, 20, 30, 40, 50, 60];
+    arrpop.pop();
+    document.getElementById("pop").innerHTML = arrpop;
+
+    //Array push() method (add element of last side in array)
+    var arrpush = [10, 20, 30, 40, 50];
+    arrpush.push(60);
+    document.getElementById("push").innerHTML = arrpush;
+
+    //concat() methode (join 2 array element)
+    var concat1 = [10, 20, 30, 40];
+    var conact2 = [45, 55, 65, 75];
+    var ans = concat1.concat(conact2);
+    document.getElementById("concat").innerHTML = ans;
+
+    //from() methode (convert string to array)
+    var a = "yogesh narola";
+    var b = Array.from(a);
+    document.getElementById("from").innerHTML = b;
+
+    //indexof() methode (return index number in array)
+    var arrindex = [10, 20, 30, 40, 50, 60];
+    var of = arrindex.indexOf(60);
+    document.getElementById("indexof").innerHTML = of;
+
+    //isArray() methode (this method chack element in array and return ans true and false)
+    var arrArray = [10, 20, 30, 40, 50, 60];
+    var is = Array.isArray(arrArray);
+    document.getElementById("isarray").innerHTML = is;
+
+    //join() methode (joint in array element)
+    var arrjoin = [10, 20, 30, 40, 50, 60];
+    var ans1 = arrjoin.join("");
+    document.getElementById("join").innerHTML = ans1;
+
+    //sort() methode
+    var arrshort = ["yogesh", 4125, "nayan", 5491, "kirtan", 4126];
+    var sort = arrshort.sort();
+    document.getElementById("sort").innerHTML = sort;
+
+    //convert array to sting methode
+    var arrs = ["my", "name", "is", "yogesh", "narola"];
+    var sring = arrs.toString();
+    document.getElementById("sring").innerHTML = sring;
+
+    //shift() methode (remove first element in array)
+    var arrsft = [10, 20, 30, 40, 50, 60];
+    arrayshift = arrsft.shift();
+    document.getElementById("shift").innerHTML = arrsft;
+
+    //unshift() methode (add element in first side in array)
+    var arrunshift = [10, 20, 30, 40, 50, 60];
+    arrunshift.unshift(5);
+    document.getElementById("unshift").innerHTML = arrunshift;
+
+    //length() methode (find the array length)
+    var arrl = [10, 20, 30, 40, 50, 60];
+    var alength = arrl.length;
+    document.getElementById("length").innerHTML = alength;
+
+    //splice() methode (this methode use for remove element at position)
+    var arrsplice = [10, 20, 30, 40, 50, 60];
+    var asplice = arrsplice.splice(4, 1);
+    document.getElementById("splice").innerHTML = arrsplice;
+
+    //slice() this methode use for remove element at position
+    var arrslice = [10, 20, 30, 40, 50, 60];
+    var anslice = arrslice.slice(2);
+    document.getElementById("slice").innerHTML = anslice;
+
+    //forEach function
+    const arrfor = [10, 20, 30, 40, 50, 60];
+    let txt = " ";
+    arrfor.forEach(myFunction1);
+    function myFunction1(val, i, k) {
+        txt += val + " ";
+    }
+    document.getElementById("foreach").innerHTML = txt;
+
+    //map function
+    const arrmap = [10, 20, 30, 40, 50, 60];
+    var ansmap = arrmap.map(myFunction);
+    function myFunction(val, i, k) {
+        return val * 2;
+    };
+    document.getElementById("map").innerHTML = ansmap;
+
+    //filter function
+    const arrfil = [10, 20, 30, 40, 50, 60, 70, 80];
+    var ansfil = arrfil.filter(myFunction2);
+    function myFunction2(val, i, k) {
+        return val >= 50;
+    };
+    document.getElementById("filter").innerHTML = ansfil;
+</script>
+
+</html>
